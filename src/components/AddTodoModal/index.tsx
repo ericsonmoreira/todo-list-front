@@ -12,10 +12,11 @@ import {
 interface AddTodoModalProps {
   open: boolean;
   onClose: () => void;
+  onConfirm?: () => void;
 }
 
 const AddTodoModal: React.FC<AddTodoModalProps> = (props) => {
-  const { open, onClose } = props;
+  const { open, onClose, onConfirm } = props;
   return (
     <Modal open={open} onClose={onClose}>
       <Card
@@ -29,18 +30,19 @@ const AddTodoModal: React.FC<AddTodoModalProps> = (props) => {
       >
         <CardHeader
           title="Criar #todo"
-          subheader="Criando uma nova tarefa 🐛"
+          subheader="Criando uma nova tarefa 🔥"
         />
         <CardContent>
           <Grid container spacing={1}>
             <Grid item xs={12}>
-              <TextField fullWidth placeholder="Descrição" />
+              <TextField fullWidth label="Descrição" />
             </Grid>
             <Grid item xs={12}>
               <TextField
                 fullWidth
                 type="datetime-local"
-                placeholder="alguma coisa"
+                label="Data"
+                InputLabelProps={{ shrink: true }}
               />
             </Grid>
           </Grid>
@@ -49,7 +51,9 @@ const AddTodoModal: React.FC<AddTodoModalProps> = (props) => {
           <Button variant="contained" color="error" onClick={onClose}>
             Cancelar
           </Button>
-          <Button variant="outlined">Confirmar</Button>
+          <Button variant="outlined" onClick={onConfirm}>
+            Confirmar
+          </Button>
         </CardActions>
       </Card>
     </Modal>
