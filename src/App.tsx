@@ -1,8 +1,13 @@
+import { CssBaseline, ThemeProvider } from '@material-ui/core';
+import Home from './pages/Home';
+import { theme } from './theme';
+
 function App() {
   return (
-    <div className="App">
-      <h1>Ola mundo</h1>
-    </div>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <Home />
+    </ThemeProvider>
   );
 }
 
