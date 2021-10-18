@@ -1,0 +1,7 @@
+{
+  "todos": [
+    { "id": 1, "name": "Comprar pão", "data": "18/10/2021", "userId": "1" },
+    { "id": 2, "name": "Comprar pão", "data": "18/10/2021", "userId": "1" }
+  ],
+  "users": [{ "id": 1, "name": "Fernanda", "email": "fernanda@email.com" }]
+}
