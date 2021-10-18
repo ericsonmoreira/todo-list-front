@@ -1,7 +1,7 @@
 import { Button } from '@mui/material';
 import { useState } from 'react';
 import AddTodoModal from '../../components/AddTodoModal';
-import { AddTask as AddTaskIconAddIcon } from '@mui/icons-material';
+import { AddTask as AddTaskIcon } from '@mui/icons-material';
 
 const Home: React.FC = () => {
   const [open, setOpen] = useState(false);
@@ -15,7 +15,7 @@ const Home: React.FC = () => {
       <Button
         variant="contained"
         color="secondary"
-        startIcon={<AddTaskIconAddIcon />}
+        startIcon={<AddTaskIcon />}
         onClick={handleOpen}
       >
         Add TODO
