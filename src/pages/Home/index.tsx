@@ -1,7 +1,7 @@
-import { Button } from '@material-ui/core';
+import { Button } from '@mui/material';
 import { useState } from 'react';
 import AddTodoModal from '../../components/AddTodoModal';
-import { Add } from '@material-ui/icons';
+import { AddTask as AddTaskIconAddIcon } from '@mui/icons-material';
 
 const Home: React.FC = () => {
   const [open, setOpen] = useState(false);
@@ -12,7 +12,12 @@ const Home: React.FC = () => {
 
   return (
     <div>
-      <Button startIcon={<Add />} onClick={handleOpen}>
+      <Button
+        variant="contained"
+        color="secondary"
+        startIcon={<AddTaskIconAddIcon />}
+        onClick={handleOpen}
+      >
         Add TODO
       </Button>
       <AddTodoModal open={open} onClose={handleClose} />

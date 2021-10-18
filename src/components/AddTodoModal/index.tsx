@@ -7,7 +7,7 @@ import {
   TextField,
   CardActions,
   Button,
-} from '@material-ui/core';
+} from '@mui/material';
 
 interface AddTodoModalProps {
   open: boolean;
