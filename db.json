@@ -1,7 +1,46 @@
 {
   "todos": [
-    { "id": 1, "name": "Comprar pão", "data": "18/10/2021", "userId": "1" },
-    { "id": 2, "name": "Comprar pão", "data": "18/10/2021", "userId": "1" }
+    {
+      "id": 1,
+      "data": "2021-10-18",
+      "todo": "Pão"
+    },
+    {
+      "id": 2,
+      "data": "2021-10-18",
+      "todo": "Leite"
+    },
+    {
+      "id": 3,
+      "data": "2021-10-18",
+      "todo": "Leite"
+    },
+    {
+      "id": 4,
+      "data": "2021-10-18",
+      "todo": "Leite"
+    },
+    {
+      "todo": "sdasd",
+      "data": "2021-10-12T19:16",
+      "id": 5
+    },
+    {
+      "todo": "Academia",
+      "data": "2021-10-18T20:09",
+      "id": 6
+    },
+    {
+      "todo": "Vasdasd",
+      "data": "2021-10-18T20:09",
+      "id": 7
+    }
   ],
-  "users": [{ "id": 1, "name": "Fernanda", "email": "fernanda@email.com" }]
+  "users": [
+    {
+      "id": 1,
+      "name": "Fernanda",
+      "email": "nascimentofernandaf@outlook.com"
+    }
+  ]
 }
